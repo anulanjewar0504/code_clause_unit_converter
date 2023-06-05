@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Unit Converter</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<div class="nav">
+		<h1>Unit Converter</h1>
+		<ul>
+			<li><a href="#1"><h3>Length</h3></a></li>
+			<li><a href="#2"><h3>Weight</h3></a></li>
+			<li><a href="#3"><h3>Temperature</h3></a></li>
+			<li><a href="#4"><h3>Area</h3></a></li>
+		</ul>
+	</div>
+
+
+	<div id="1" class="box">
+	<div class="container">
+		<h2 class="title">Converter for Length</h2>
+		<div class="input-container">
+			<label for="millimeter">Millimeter</label>
+			<input type="number" id="millimeter" placeholder="mm"
+				oninput="millimeter(parseFloat(this.value))" />
+		</div>
+		<div class="input-container">
+			<label for="centimeter">Centimeter</label>
+			<input type="number" id="centimeter" placeholder="cm"
+				onchange="centimeter(parseFloat(this.value))" />
+		</div>
+		<div class="input-container">
+			<label for="meter">Meter</label>
+			<input type="number" id="meter" placeholder="m" 
+			onchange="meter(parseFloat(this.value))" />
+		</div>
+		<div class="input-container">
+			<label for="kilometer">Kilometer</label>
+			<input type="number" id="kilometer" placeholder="km" 
+			onchange="kilometer(parseFloat(this.value))" />
+		</div>
+	</div>
+    </div>
+
+	<div id="2" class="box">
+		<div class="container">
+			<h2 class="title">Converter for Weight</h2>
+			<div class="input-container">
+				<label for="Milligram">Milligram</label>
+				<input type="number" id="Milligram" placeholder="mg"
+					oninput="Milligram(parseFloat(this.value))" />
+			</div>
+			<div class="input-container">
+				<label for="Gram">Gram</label>
+				<input type="number" id="Gram" placeholder="g"
+					onchange="Gram(parseFloat(this.value))" />
+			</div>
+			<div class="input-container">
+				<label for="Kilogram">Kilogram</label>
+				<input type="number" id="Kilogram" placeholder="Kg" 
+				   onchange="Kilogram(parseFloat(this.value))" />
+			</div>
+			<div class="input-container">
+				<label for="Tonne">Tonne</label>
+				<input type="number" id="Tonne" placeholder="t" 
+				   onchange="Tonne(parseFloat(this.value))" />
+			</div>
+		</div>
+		</div>
+
+		<div id="3" class="box">
+			<div class="container">
+				<h2 class="title">Converter for Temperature</h2>
+				<div class="input-container">
+					<label for="DegreeCelsius">Degree Celsius</label>
+					<input type="number" id="DegreeCelsius" placeholder="°C"
+						oninput="DegreeCelsius(parseFloat(this.value))" />
+				</div>
+				<div class="input-container">
+					<label for="Fahrenheit">Fahrenheit</label>
+					<input type="number" id="Fahrenheit" placeholder="°F"
+						onchange="Fahrenheit(parseFloat(this.value))" />
+				</div>
+				<div class="input-container">
+					<label for="Kelvin">Kelvin</label>
+					<input type="number" id="Kelvin" placeholder="K" 
+					      onchange="Kelvin(parseFloat(this.value))" />
+				</div>
+			</div>
+			</div>
+
+			<div id="4" class="box">
+				<div class="container">
+					<h2 class="title">Converter for Area</h2>
+					<div class="input-container">
+						<label for="Squareinch">Square inch</label>
+						<input type="number" id="Squareinch" placeholder="Sq in"
+							oninput="Squareinch(parseFloat(this.value))" />
+					</div>
+					<div class="input-container">
+						<label for="Squarefoot">Square foot</label>
+						<input type="number" id="Squarefoot" placeholder="Sq ft"
+							onchange="Squarefoot(parseFloat(this.value))" />
+					</div>
+					<div class="input-container">
+						<label for="Squaremeter">Square meter</label>
+						<input type="number" id="Squaremeter" placeholder="m²" 
+						onchange="Squaremeter(parseFloat(this.value))" />
+					</div>
+					<div class="input-container">
+						<label for="Squarekilometer">Square kilometer</label>
+						<input type="number" id="Squarekilometer" placeholder="km²" 
+						onchange="Squarekilometer(parseFloat(this.value))" />
+					</div>
+				</div>
+				</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
