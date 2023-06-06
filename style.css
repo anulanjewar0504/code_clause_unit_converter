@@ -39,10 +39,10 @@ body {
 .box{
 	
 	justify-content: center;
-	padding-left: 38%;
-	padding-top: 15%;
-	padding-right: 30%;
-	padding-bottom: 17%;
+	align-items: center;
+	display:flex;
+	height: 50vh;
+	padding-top: 34%;
 }
 .container {
 
